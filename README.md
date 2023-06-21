@@ -4,8 +4,20 @@ Only one input image is included, the rest of the database was removed due to th
 
 
 # How to use:
-The first step is to activate the sunew venv.
+The first step is to set up the following folder structure:
+- images/
+-   calibration/
+-   inputs/
+-     bw_threshold/
+-     raw/
+-   outputs/
+-     areas/
+-     calibration/
+-     contours/
+-     thresholds/
+  
 Save the input images for analysis in the "images/inputs/raw/" subfolder in .jpg format.
+Install the needed libraries in your virtual or global environment: numpy, cv2, pandas, matplotlib, glob.
 
 1) Camera calibration
   If you are using an ELP-USBFHD08S-MFV camera, running the calibration script or even doing the calibration protocol is unnecessary. Skip to step 2.
